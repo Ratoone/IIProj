@@ -32,6 +32,7 @@
             this.userBox = new System.Windows.Forms.TextBox();
             this.passBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.loginButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -67,11 +68,22 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Password";
             // 
+            // loginButton
+            // 
+            this.loginButton.Location = new System.Drawing.Point(94, 163);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(75, 23);
+            this.loginButton.TabIndex = 4;
+            this.loginButton.Text = "Login";
+            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.loginButton);
             this.Controls.Add(this.passBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.userBox);
@@ -89,6 +101,7 @@
         private System.Windows.Forms.TextBox userBox;
         private System.Windows.Forms.TextBox passBox;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button loginButton;
     }
 }
 
