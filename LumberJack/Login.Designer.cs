@@ -28,12 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.label1 = new System.Windows.Forms.Label();
+            this.userBox = new System.Windows.Forms.TextBox();
+            this.passBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(48, 102);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Username";
+            // 
+            // userBox
+            // 
+            this.userBox.Location = new System.Drawing.Point(109, 99);
+            this.userBox.Name = "userBox";
+            this.userBox.Size = new System.Drawing.Size(100, 20);
+            this.userBox.TabIndex = 1;
+            // 
+            // passBox
+            // 
+            this.passBox.Location = new System.Drawing.Point(109, 125);
+            this.passBox.Name = "passBox";
+            this.passBox.PasswordChar = '*';
+            this.passBox.Size = new System.Drawing.Size(100, 20);
+            this.passBox.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(48, 128);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Password";
+            // 
+            // Login
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.passBox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.userBox);
+            this.Controls.Add(this.label1);
+            this.Name = "Login";
+            this.Text = "Login";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox userBox;
+        private System.Windows.Forms.TextBox passBox;
+        private System.Windows.Forms.Label label2;
     }
 }
 
