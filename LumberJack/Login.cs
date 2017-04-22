@@ -18,6 +18,9 @@ namespace LumberJack
         {
             string user = userBox.Text;
             string pass = passBox.Text;
+
+            OperatorForm op = new OperatorForm(op);
+            op.Show();
         }
 
     }
