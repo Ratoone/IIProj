@@ -1,0 +1,2 @@
+D:\II\Project\LumberJack\LumberJack\bin\Debug\LumberJack.exe.config
+C:\Users\vacar\Desktop\LumberJack\LumberJack\bin\Debug\LumberJack.exe.config
